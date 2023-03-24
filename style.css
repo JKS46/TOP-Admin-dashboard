@@ -22,7 +22,7 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.icons{
+.links{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -30,18 +30,22 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.head img{
+#mainPfp{
     border-radius: 50%;
     height: 40px;
     width: 40px;
 }
-#head-one{
+.head-row1{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
 }
-#head-two{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.greeting{
+    font-weight: bold;
+    font-size: 10px;
+}
+#name{
+    font-weight: bolder;
+    font-size: 18px;
 }
 .sidebar{
     background-color: #1892d3;
@@ -50,19 +54,24 @@ nav{
     grid-template-rows: 30px 200px 100px;
     gap: 35px;
 }
-.sidebar img,nav img{
+.icons{
     height: 25x;
     width: 25px;
+}
+.pfp{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
 }
 .sidebar-heading{
     height: 50px;
 }
-.sidebar-one{
+.sidebar-row1{
     display:grid;
     grid-template-rows: repeat(6, 1fr);
     gap: 10px;
 }
-.sidebar-two{
+.sidebar-row2{
     display:grid;
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
@@ -78,18 +87,15 @@ main{
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
-.card img{
-    height: 30px;
-    width: 30px;
+.card{
+    background-color: white;
+    border-radius: 5px;
 }
 .sidecard{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-.sidecard img{
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
+    background-color: white;
+    border-radius: 5px;
 }
 footer{
     text-align: center;
