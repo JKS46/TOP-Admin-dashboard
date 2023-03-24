@@ -15,29 +15,58 @@ html,body{
 header{
     grid-column: 2/3;
     display: grid;
-    grid-template-rows: 0.8fr 1.2fr;
-    height: 100px;
+    grid-template-rows: 50px 60px;
+    height: 110px;
 }
 nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: aqua;
+}
+#search{
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    align-items: center;
+    gap: 5px;
+}
+#search input{
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
 }
 .links{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+button{
+    background-color: #1892d3;
+    color: white;
+    border: transparent;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 3px;
+    width: 60px;
 }
 .head{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.head-col1{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    align-items: center;
+    gap: 15px;
+    
+}
+#profile{
+    justify-self: end;
+}
 #mainPfp{
     border-radius: 50%;
-    height: 40px;
-    width: 40px;
-}
-.head-row1{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    height: 45px;
+    width: 45px;
 }
 .greeting{
     font-weight: bold;
@@ -69,8 +98,12 @@ nav{
     display: grid;
     grid-template-columns: 0.3fr 1fr;
     gap: 5px;
-    font-size: large;
+    font-size: 25px;
     align-items: center;
+}
+.sidebar-heading img{
+    height: 33px;
+    width: 33px;
 }
 .sidebar-row1{
     display:grid;
@@ -104,11 +137,20 @@ main{
     background-color: white;
     border-radius: 5px;
 }
-.sidecard{
+.sidecard-row1, .sidecard-row2{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     background-color: white;
     border-radius: 5px;
+}
+.sidecard-row2 .cards{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    gap: 5px;
+    align-items: center;
+}
+.sidecard-row2 .cards img{
+    justify-self: end;
 }
 footer{
     text-align: center;
