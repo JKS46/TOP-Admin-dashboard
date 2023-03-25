@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 html,body{
     padding: 0;
@@ -139,7 +140,9 @@ button{
 main{
     background-color: #e1e8f0;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 0.8fr;
+    gap: 15px;
+    padding: 15px;
 }
 .wrapper{
     display: grid;
@@ -149,13 +152,27 @@ main{
 }
 .card{
     background-color: white;
+    border-left: 7px solid darkorange;
     border-radius: 5px;
+    display: grid;
+    grid-template-rows: 30px 90px 30px;
+    gap: 2px;
+    background-color: #1892d3;
+    padding-left: 6px;
+}
+.main-right{
+    display: grid;
+    grid-template-rows: 50px 200px 50px 200px;
 }
 .sidecard-row1, .sidecard-row2{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     background-color: white;
     border-radius: 5px;
+}
+.sidecard-row1{
+    
+    align-items: center;
 }
 .sidecard-row2 .cards{
     display: grid;
