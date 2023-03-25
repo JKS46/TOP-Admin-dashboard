@@ -20,24 +20,39 @@ header{
 }
 nav{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: aqua;
+    grid-template-columns: 1fr 0.7fr;
+    gap: 20px;
 }
 #search{
     display: grid;
-    grid-template-columns: 1fr 0.3fr;
+    grid-template-columns: 1fr 0.1fr;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+    padding-left: 40px;
 }
 #search input{
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 5px;
+    background-color: #e1e8f0;
 }
 .links{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+}
+nav .links{
+    grid-template-columns: 0.3fr 0.3fr 1fr;
+    justify-self: center;
+    gap: 15px;
+}
+nav .icons{
+    height: 22px;
+    width: 22px;
+}
+.head .links{
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    gap: 30px;
 }
 button{
     background-color: #1892d3;
@@ -46,8 +61,8 @@ button{
     font-size: 12px;
     font-weight: bold;
     border-radius: 15px;
-    padding: 3px;
-    width: 60px;
+    padding: 8px;
+    width: 80px;
 }
 .head{
     display: grid;
@@ -58,7 +73,6 @@ button{
     grid-template-columns: 0.3fr 1fr;
     align-items: center;
     gap: 15px;
-    
 }
 #profile{
     justify-self: end;
