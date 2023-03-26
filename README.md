@@ -1,6 +1,7 @@
 # Admin dashboard
 
-## Work in Progress
+![image](https://user-images.githubusercontent.com/93701274/227803655-fd356af1-b759-4e33-938c-60a48c7ed9ed.png)
+
 
 ### To Do
 
@@ -9,6 +10,7 @@
 - [ ] remove unwanted css
 - [ ] align and justify stuff
 - [ ] padding and margin overflow into grid fr issue
+- [ ] set root element var for different values
 
 ### Credits
 
