@@ -12,12 +12,12 @@ html,body{
 .container{
     display: grid;
     grid-template-columns: 0.7fr 3fr;
+    grid-template-rows: 110px calc(100vh - 110px);
 }
 header{
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 50px 60px;
-    height: 110px;
 }
 nav{
     display: grid;
@@ -157,7 +157,6 @@ main{
     display: grid;
     grid-template-rows: 30px 90px 30px;
     gap: 2px;
-    background-color: #1892d3;
     padding-left: 6px;
 }
 .main-right{
@@ -184,6 +183,8 @@ main{
     justify-self: end;
 }
 footer{
+    font-weight: bold;
+    background-color: transparent;
     text-align: center;
     position: fixed;
     bottom: 0;
