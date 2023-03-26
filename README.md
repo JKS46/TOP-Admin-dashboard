@@ -1,6 +1,15 @@
 # Admin dashboard
 
 ## Work in Progress
+
+### To Do
+
+- [ ] em font
+- [ ] resize and overflow issue
+- [ ] remove unwanted css
+- [ ] align and justify stuff
+- [ ] padding and margin overflow into grid fr issue
+
 ### Credits
 
 Photo by <a href="https://unsplash.com/@dolis_ly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Monica Garniga</a> on <a href="https://unsplash.com/wallpapers/art/cartoon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
