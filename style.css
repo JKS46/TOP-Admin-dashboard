@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
 }
 html,body{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     height: 100%;
@@ -142,7 +142,7 @@ main{
     display: grid;
     grid-template-columns: 2fr 0.8fr;
     gap: 15px;
-    padding: 15px;
+    padding: 0px 15px 15px;
 }
 .wrapper{
     display: grid;
@@ -159,28 +159,58 @@ main{
     gap: 2px;
     padding-left: 6px;
 }
+.card:hover{
+    border-left: 7px solid #1892d3;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
 .main-right{
     display: grid;
-    grid-template-rows: 50px 200px 50px 200px;
+    grid-template-rows: 60px 250px 50px 200px;
 }
-.sidecard-row1, .sidecard-row2{
+.sidecard-row1{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    border-radius: 8px;
+    align-items: center;
+    padding: 15px;
+}
+.sidecard-row1 .cards{
+    
+}
+.sidecard-row1 .cards .cards-head{
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px;
+}
+.sidecard-row1 .cards .cards-content{
+    font-size: 10px;
+    padding: 3px;
+}
+.sidecard-row2{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     background-color: white;
-    border-radius: 5px;
-}
-.sidecard-row1{
-    
-    align-items: center;
+    border-radius: 8px;
 }
 .sidecard-row2 .cards{
     display: grid;
     grid-template-columns: 0.3fr 1fr;
-    gap: 5px;
+    gap: 8px;
     align-items: center;
 }
 .sidecard-row2 .cards img{
     justify-self: end;
+}
+.sidecard-row2 .cards .cards-head{
+    font-weight: bold;
+    font-size: 13px;
+}
+.sidecard-row2 .cards .cards-content{
+    font-size: 14px;
 }
 footer{
     font-weight: bold;
